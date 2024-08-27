@@ -1,0 +1,40 @@
+{
+  "id": "faerun-map",
+  "title": "Faerun Atlas",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "packs": [
+    {
+      "name": "faerun-map",
+      "label": "Faerun Atlas",
+      "path": "packs/faerun-map",
+      "type": "Scene",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "faerun-journal",
+      "label": "Faerun Atlas Notes",
+      "path": "packs/faerun-journal",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "scene-packer",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  }
+}
